@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cloudamize UI Performance Testing">
+
+
+<listeners>
+       <listener class-name="com.cloudamize.cmp.automation.performance.listeners.ListenersBlog" />
+       <listener class-name="com.cloudamize.cmp.automation.performance.listeners.RetryListenerClass"/>
+ </listeners>
+ 
+  <test name="Cloudamize Login">
+    <classes>
+      <class name="com.cloudamize.cmp.automation.performance.testcases.LoginPageResponse"/>
+    </classes>
+  </test> 
+  
+<!--   <test name="Azure Overview Page"> -->
+<!--     <classes> -->
+<!--         <class name="com.cloudamize.cmp.automation.performance.testcases.AzureOverviewResponses"/>       -->
+<!--     </classes> -->
+<!-- </test> -->
+
+<!-- <test name="Migration Planner More Tools"> -->
+<!--     <classes> -->
+<!--         <class name="com.cloudamize.cmp.automation.performance.testcases.MigrationPlannerMoreToolsResponses"/>       -->
+<!--     </classes> -->
+<!-- </test> -->
+
+<!-- <test name="Migration Planner Summary Tab Open Links"> -->
+<!--     <classes> -->
+<!--         <class name="com.cloudamize.cmp.automation.performance.testcases.MiragtionPlannerPageResponses"/>       -->
+<!--     </classes> -->
+<!-- </test> -->
+
+<!-- <test name="Migration Planner Summary Tab Detailed Links"> -->
+<!--     <classes> -->
+<!--         <class name="com.cloudamize.cmp.automation.performance.testcases.MigrrationPlannerDetailedLinkResponses"/>       -->
+<!--     </classes> -->
+<!-- </test> -->
+  
+</suite> 

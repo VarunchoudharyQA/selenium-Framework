@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cloudamize UI Performance Testing]">
+  <listeners>
+    <listener class-name="com.cloudamize.cmp.automation.performance.listeners.ListenersBlog"/>
+    <listener class-name="com.cloudamize.cmp.automation.performance.listeners.RetryListenerClass"/>
+  </listeners>
+  <test name="Cloudamize Login(failed)">
+    <classes>
+      <class name="com.cloudamize.cmp.automation.performance.testcases.LoginPageResponse">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="LogoutFromCloudamizeApplication"/>
+          <include name="viewDetailsofMicrosoftAzure"/>
+        </methods>
+      </class> <!-- com.cloudamize.cmp.automation.performance.testcases.LoginPageResponse -->
+    </classes>
+  </test> <!-- Cloudamize Login(failed) -->
+</suite> <!-- Failed suite [Cloudamize UI Performance Testing] -->
